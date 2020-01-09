@@ -48,12 +48,12 @@ func notifyHandler(w http.ResponseWriter, r *http.Request) {
 	data := url.Values{}
 	data.Add("message", msg)
 
-	byt, err := apiCall("POST", apiNotify, data, token)
+	byt, err := apiCall("POST", apiNotify, data, "MJdfRUGaljIM1jc18IN2vMBxCSkbbNtNhGHxYnkJkAb")
 	fmt.Println("ret:", string(byt), " err:", err)
 
 	res := newTokenResponse(byt)
 	fmt.Println("result:", res)
-	token = "MJdfRUGaljIM1jc18IN2vMBxCSkbbNtNhGHxYnkJkAb"
+	token = res.AccessToken
 	w.Write(byt)
 }
 
