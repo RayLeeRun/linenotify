@@ -53,7 +53,7 @@ func notifyHandler(w http.ResponseWriter, r *http.Request) {
 
 	res := newTokenResponse(byt)
 	fmt.Println("result:", res)
-	token = res.AccessToken
+	token = "CTlAFUgoBUKv4rv2lxy59qpQqhMIHXDN1pZpW8ySdE7"
 	w.Write(byt)
 }
 
