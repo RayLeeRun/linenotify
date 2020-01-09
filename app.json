@@ -1,7 +1,7 @@
 {
   "name": "linenotify",
   "description": "Line Notify Template",
-  "repository": "https://github.com/kkdai/linenotify",
+  "repository": "https://github.com/RayLeeRun/linenotify",
   "keywords": ["Line", "go", "static"],
   "buildpacks": [
     {
