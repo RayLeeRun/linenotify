@@ -54,7 +54,7 @@ func notifyHandler(w http.ResponseWriter, r *http.Request) {
 	res := newTokenResponse(byt)
 	fmt.Println("result:", res)
 	token = res.AccessToken
-	w.Write("hi")
+	w.Write("byt")
 }
 
 func callbackHandler(w http.ResponseWriter, r *http.Request) {
