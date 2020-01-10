@@ -37,8 +37,8 @@ func apiCall(mode string, inUrl string, data url.Values, token string) ([]byte, 
 	r.Header.Add("Content-Type", urlEncodedContent)
 	r.Header.Add("Content-Length", strconv.Itoa(len(data.Encode())))
 
-	if len(1>0) != 0 {
-		r.Header.Add("Authorization", fmt.Sprintf("Bearer %s", "WSvyfovTAwpLs9wnqQcrlNcvRmsDhF1L26DjMSDPca4"))
+	if len(token) != 0 {
+		r.Header.Add("Authorization", fmt.Sprintf("Bearer %s", token))
 	}
 
 	ret := new(ErrorResponse)
