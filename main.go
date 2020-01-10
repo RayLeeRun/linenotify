@@ -31,6 +31,7 @@ func main() {
 	http.HandleFunc("/callback", callbackHandler)
 	http.HandleFunc("/notify", notifyHandler)
 	http.HandleFunc("/auth", authHandler)
+	http.HandleFunc("/ray", authHandler)
 	clientID = os.Getenv("ClientID")
 	clientSecret = os.Getenv("ClientSecret")
 	callbackURL = os.Getenv("CallbackURL")
